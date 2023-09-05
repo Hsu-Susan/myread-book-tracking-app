@@ -2,20 +2,71 @@ html,
 body,
 .root {
   height: 100%;
+
 }
 body {
   line-height: 1.5;
 }
+#root{
+  height: 100%;
+}
 body,
 .app {
-  background: white;
+  background: url("./img/books-shelf.avif");
+  min-height: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #9873d5;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  bottom: 5px;
+  left: 5px;
+  background-color: #cfc0e7;
+}
+
+/* loading spinner */
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #9873d5;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.spinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #5b07e3 transparent #610ce8 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 /* main page */
 
 .list-books-title {
   padding: 10px 0;
-  background: #2e7c31;
+  background: #764abc;
   text-align: center;
 }
 .list-books-title h1 {
@@ -40,7 +91,12 @@ body,
 }
 
 .bookshelf-title {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #dedede;
+  font-size: 40px;
+  font-weight: 600;
+  color: #764abc;
+  text-shadow: 0px 5px 15px rgba(206, 179, 232, 0.8);
 }
 .bookshelf-books {
   text-align: center;
@@ -56,7 +112,7 @@ body,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #2e7d32;
+  background: #764abc;
   background-image: url("./icons/add.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -150,7 +206,7 @@ body,
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #60ac5d;
+  background: #9873d5;
   background-image: url("./icons/arrow-drop-down.svg");
   background-repeat: no-repeat;
   background-position: center;

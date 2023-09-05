@@ -38,7 +38,7 @@ The main page contains a link to the search page. When the link is clicked, the 
 
 To install and run the app locally:
 
-1. Clone this repository: `git clone https://github.com/Hsu-Susan/nd0191-c1-myreads.git`
+1. Clone this repository: `git clone https://github.com/Hsu-Susan/myread-book-tracking-app.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 

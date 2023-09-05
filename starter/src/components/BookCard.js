@@ -22,7 +22,7 @@ const BookCard = (props) => {
           style={{
             width: 128,
             height: 193,
-            backgroundImage: `url("${book.imageLinks.smallThumbnail}")`,
+            backgroundImage: `url("${imgUrl}")`,
           }}
         ></div>
         <div className="book-shelf-changer">

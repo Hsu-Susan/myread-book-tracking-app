@@ -15,7 +15,7 @@ const Shelf = (props) => {
                     bookTitle={book.title}
                     author={book.authors}
                     bookShelf={book.shelf}
-                    imgURL={book.imageLinks && book.imageLinks.smallThumbnail}
+                    imgURL={book.imageLinks.smallThumbnail}
                     handleChange={props.handleChange}
                   />
                 </li>
@@ -32,7 +32,7 @@ const Shelf = (props) => {
 
 BookCard.propsTypes = {
   books: PropTypes.array.isRequired,
-  updateShelf: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default Shelf;

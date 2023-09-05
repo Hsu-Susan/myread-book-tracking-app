@@ -37,7 +37,7 @@ const ListShelf = (props) => {
 
 ListShelf.propTypes = {
   books: PropTypes.array.isRequired,
-  updateShelf: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };
 
 export default ListShelf;

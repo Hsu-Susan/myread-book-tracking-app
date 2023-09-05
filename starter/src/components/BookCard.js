@@ -4,7 +4,7 @@ const BookCard = (props) => {
     book,
     bookTitle,
     author,
-    imgUrl,
+    imgURL,
     bookShelf,
     handleChange,
     isSearching,
@@ -22,7 +22,7 @@ const BookCard = (props) => {
           style={{
             width: 128,
             height: 193,
-            backgroundImage: `url("${imgUrl}")`,
+            backgroundImage: `url(${imgURL})`,
           }}
         ></div>
         <div className="book-shelf-changer">
@@ -49,10 +49,8 @@ const BookCard = (props) => {
           </select>
         </div>
       </div>
-      <div className="book-title">{book.title}</div>
-      <div className="book-authors">
-        {book.authors && book.authors.join(", ")}
-      </div>
+      <div className="book-title">{bookTitle}</div>
+      <div className="book-authors">{author && author.join(", ")}</div>
     </div>
   );
 };

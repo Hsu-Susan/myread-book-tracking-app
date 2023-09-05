@@ -60,7 +60,7 @@ const SearchBook = (props) => {
                   bookTitle={book.title}
                   author={book.authors}
                   bookShelf={book.shelf}
-                  imgURL={book.imageLinks && book.imageLinks.smallThumbnail}
+                  imgURL={book.imageLinks && book.imageLinks.thumbnail}
                   handleChange={handleChange}
                   isSearching={true}
                 />
